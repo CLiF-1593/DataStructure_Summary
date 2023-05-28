@@ -84,6 +84,7 @@ ex) List Slicing : 새로 만들어진 list 객체는 새로운 참조 객체만
 > |l|signed long int (4)|
 > |L|unsigned long int (4)|
 > |f|float (4)|
-> |d|double (8)|
+> |d|double (8)|    
+> 
 > ctype만 가능 (class는 불가능)
 > 이런건 시험에 안 나올 확률이 굉장히 높음  
