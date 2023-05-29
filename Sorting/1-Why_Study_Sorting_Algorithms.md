@@ -32,7 +32,7 @@ n개의 데이터를 검사하면 가장 큰 값이 마지막에 위치
 Time Complexity : $O(n^2)$  
 Space Complexity : $O(1)$   
 
-https://github.com/CLiF-1593/SortingVisualizer/blob/master/SortingAlgorithm/Bogo_Sort.py
+https://github.com/CLiF-1593/SortingVisualizer/blob/master/SortingAlgorithm/Bubble_Sort.py
 
 #### 1.2. Insertion Sort
 어떤 데이터 앞의 모든 데이터는 정렬되어있다고 가정  
