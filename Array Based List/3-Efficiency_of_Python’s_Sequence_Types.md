@@ -92,7 +92,6 @@ $O(n)$ 알고리즘 존재
 하나하나 push (str += character) -> 굉장히 비효율적 
 왜냐하면 str은 immutable 하므로 계속 새로운 공간을 할당 
 결국 시간복잡도는 $\Omega(n^2)$ 
-    
 따라서 list 이용    
 list에 append ($O(1)$)  
 string = "".join(list)  
