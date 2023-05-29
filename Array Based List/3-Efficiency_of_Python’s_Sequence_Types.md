@@ -51,7 +51,7 @@ len(data), data[index]
 |data.remove(val)|$O(n)$*|
 |data1.extend(data2)|$O(n_2)$|
 |data.reverse()|$O(n)$|
-|data.sort()|$O(nlogn)$|
+|data.sort()|$O(n\log{n})$|
 
 \* : amortized
 <br>
