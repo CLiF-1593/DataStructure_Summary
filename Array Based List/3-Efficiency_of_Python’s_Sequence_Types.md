@@ -74,7 +74,7 @@ remove : val이 나올때까지 반복, val이 나오면 삭제하고 뒤에 데
 추가되는 양을 수용할 수 있도록 공간을 새로 할당하고, 데이터를 하나씩 추가   
 append보다는 extend가 효율적임 (공간을 중간 중간 새로 확장하는 경우 X, 그 외 여러 쓸데없는 작업이 제거됨 (오버헤드 제거) + extend는 파이썬으로 돌아가지 않고 C로 돌아감)   
 
-4. **Constructing New Lists**
+4. **Constructing New Lists**   
 new_list = [(notation with k) for k in range(n)]    
 
 <br>
@@ -92,7 +92,7 @@ $O(n)$ 알고리즘 존재
 하나하나 push (str += character) -> 굉장히 비효율적 
 왜냐하면 str은 immutable 하므로 계속 새로운 공간을 할당 
 결국 시간복잡도는 $\Omega(n^2)$ 
-<br>
+    
 따라서 list 이용    
 list에 append ($O(1)$)  
 string = "".join(list)  
