@@ -59,8 +59,34 @@ Array A
      
 **추가 공간 크기** : 원래 공간 크기의 2배
 
-*** 파이썬 코드는 교과서 pg 196 참조 
+*** 파이썬 코드는 교과서 196pg 참조 
      
 <br>
      
 #### 3.2 Amortized Analysis of Dynamic Arrays
+**Amortized Analysis** :  
+overflow가 일어나는 경우에만 크기를 2배로 늘림 
+overflow가 일어나지 않는다면 모든 append 연산은 $O(1)$,  
+한 번 늘리고 나서는 이전 list 크기만큼은 $O(1)$의 append 연산이 보장  
+
+*** 증명 같지 않은 증명을 보고 싶으면 198pg 
+
+**Geometric Increase in Capacity**  
+* 공간이 부족할 때 n배씩 늘리는 전략  
+* 크기를 늘리는 정도는 선택 가능    
+(2 대신 4배로 늘린다면 메모리 낭비↑, 평균적인 소요시간↓)  
+(2 대신 1.5배로 늘린다면 메모리 낭비↓, 평균적인 소요시간↑)  
+* Amortized하게 분석하면 항상 $O(1)$  
+
+**Arithmetic Progression**
+* 공간이 부족할 때 c개씩 늘리는 전략
+* 늘리는 정도 선택 가능
+* 시간복잡도를 분석해보면 $\Omega(n^2)$
+$let \; m = \lfloor{\frac{n}{c}}\rfloor$  
+$\sum_{i=1}^{m} ci=c\times \sum_{i=1}^{m} i = c \frac{m(m+1)}{2} \ge c\frac{\frac{n}{c}(\frac{n}{c} + 1)}{2} \ge \frac{n^2}{2c}$  
+
+**Shrinking an Array**
+사용 용량이 50% 이하일 때 절반을 줄여버리면 append 될 경우 다시 공간을 2배로 늘리는 작업을 하므로 매우 비효율적임 
+따라서 **25% 이하로 떨어질 때 절반으로 줄이도록** 알고리즘을 설계 
+그러면 항상 사용중인 공간과 전체 할당된 공간 사이의 관계가 약 2배 차이로 유지됨 
+(최대 4배 이상 차이나지 않도록 하는 알고리즘) 
