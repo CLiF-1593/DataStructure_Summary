@@ -80,8 +80,9 @@ overflow가 일어나지 않는다면 모든 append 연산은 $O(1)$,
 
 **Arithmetic Progression**
 * 공간이 부족할 때 c개씩 늘리는 전략
-* 늘리는 정도 선택 가능
-* 시간복잡도를 분석해보면 $\Omega(n^2)$
+* 늘리는 정도 선택 가능 
+* 시간복잡도를 분석해보면 $\Omega(n^2)$ 
+  
 $let \; m = \lfloor{\frac{n}{c}}\rfloor$  
 $\sum_{i=1}^{m} ci=c\times \sum_{i=1}^{m} i = c \frac{m(m+1)}{2} \ge c\frac{\frac{n}{c}(\frac{n}{c} + 1)}{2} \ge \frac{n^2}{2c}$  
 
