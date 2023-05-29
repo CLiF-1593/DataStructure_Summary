@@ -45,7 +45,7 @@ Space Complexity : $O(k)$
 
 여기서 k는 각 자릿값을 인덱스로 취할 때 Array의 크기    
 
-https://github.com/CLiF-1593/SortingVisualizer/blob/master/SortingAlgorithm/Counting_Sort.py
+https://github.com/CLiF-1593/SortingVisualizer/blob/master/SortingAlgorithm/Radix_Sort.py
 
 **Stable Sorting**
 데이터 a와 b의 값이 서로 같을 때, a가 b보다 먼저 위치해있다면, 정렬 후에도 a는 반드시 b보다 앞에 위치해야함.    
